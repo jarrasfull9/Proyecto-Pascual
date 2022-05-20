@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 200px;
+    display: flex;
+    margin: auto;
+    height: auto;
+    position: fixed;/*FISED dejar una caja en el mismo sitio aunque nos movamos*/
+        right: 5vw;
+        top: 5vh;
+        z-index: 100;
+}
+/**********Imagen*************/
+body header div img{
+    width: 100%;
+    height: auto;
+}
+/**************Icono***************/
+header div#encabezado i{
+    font-size: 2em;
+    color: rgba(0,0,0,0.5);
+    /*con estas dos oredenes conseguimos centrarlo en su caja contenedora*/
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+/*************Video oculto***************/
+#videoEncabezado{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url("../imagenesPas/gentePascual.jpg");
+    background-size: cover;
+    background-position: center center;
+    /*Añadiremos no-repeat para que la imagen no se repita*/
+    background-repeat: no-repeat;
+}
+/*********Titulo e icono*********/
+section#videoEncabezado #tituloIcono{
+    text-align: center;
+    position: absolute;
+        top: 50%;
+        left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    color: azure;
+    text-shadow: 0px 0px 15px #000000;;
+}
+section#videoEncabezado #tituloIcono i{
+    font-size: 2em;
+    color: rgba(0, 0, 0, 0.5);
+}
+/*******X cerrar*******/
+#ocultar{
+    font-size: 2em;
+    
+}
+/********Video*********/
+#videoOculto{
+    z-index: 100;
+    width: 80vw;
+    height: 90vh;
+    display: none;
+    position: absolute;
+        top: 50%;
+        left: 50%;
+    transform: translate(-50%, -50%);
+}
+#videoOculto iframe{
+    width: 100%;
+    height: 100%;
+}
+#ocultar{
+    font-size: 3em;
+    position: absolute;
+        bottom: 95%;
+        left:100%;
+}
+/*******************Marcas*****************/
+section#marcas{
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    background-color: aqua;
+
+}
+#marcasIzquierda{
+    align-items: center;
+    width: 32%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+#marcasDerecha{
+    width: 68%;
+    display: flex;
+}
+img.logoMarca:hover{
+    transform: scale(1.8);
+    filter: drop-shadow(15px 2px 15px rgba(5, 5, 5, 8));
+}
+section img.logoMarca{ 
+    width: 32%;
+    height: auto;
+    padding: 10px;
+    transition: 1s all ease-in-out;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="./iconos/faviconPascual.png" />
+        <title>Pascual</title>
+        <link rel="stylesheet" href="./cssPas/cssPas.css" />
+        <script src="./javaScript/javaPas.js" ></script>
+        <link rel="stylesheet" href="./sliderPascual/cssSlider.css" />
+        <script src="./javaScript/javaPas.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    </head>
+    <body>
+        <header>
+            <div id="encabezado">
+                <img src="./imagenesPas/logoPascual1.png" alt="Logo Blanco de Pascual" />
+                <i class="fa fa-bars" id="logoMenu"></i>
+            </div>
+        </header>
+        <main>
+            <section id="videoEncabezado">
+                <div id="tituloIcono">
+                    <h2>DAR LO MEJOR</h2>
+                    <i class="fa fa-play-circle-o" id="ver"></i><!--La O es para quitar el color de fondo-->
+                </div>
+                <div id="videoOculto">
+                    <iframe id="videoCalidad" title="Video de Youtube"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <i class="fa fa-close" id="ocultar"></i>
+                </div>
+            </section>
+            <section id="marcas">
+                <article id="marcasIzquierda">
+                    <h2>Nuestras marcas</h2>
+                    <div id="nuestrasMarcas">
+                        <img src="./imagenesPas/logoPascual1.png" alt="Logo Pascual" class="logoMarca" />
+                        <img src="./imagenesPas/logoBezoya.png" alt="Bezolla" class="logoMarca" />
+                        <img src="./imagenesPas/logoBifrutas.png" alt="Bifrutas" class="logoMarca" />
+                        <img src="./imagenesPas/logoEssential.png" alt="Essential" class="logoMarca" />
+                        <img src="./imagenesPas/logoMocay.png" alt="Mocay" class="logoMarca" />
+                        <img src="./imagenesPas/logoVivesoy.png" alt="Vivesoy" class="logoMarca" />
+                        <img src="./imagenesPas/logoPascual1.png" alt="Logo Pascual" class="logoMarca" />
+                    </div>
+                </article>
+                <article id="marcasDerecha">
+                    <h2></h2>
+                    <div id="contenedor">
+                        <div class="contenedor__slider">
+                            <div class="slider" id="slider">
+                                <div class="slider__seccion">
+                                    <img src="./sliderPascual/foto1.jpg" alt="Foto de Cerdeña" class="slider__img">
+                                </div>
+                                <div class="slider__seccion">
+                                    <img src="./sliderPascual/foto2.jpg" alt="Foto de Cerdeña" class="slider__img">
+                                </div>
+                                <div class="slider__seccion">
+                                    <img src="./sliderPascual/foto3.jpg" alt="Foto de Cerdeña" class="slider__img">
+                                </div>
+                                <div class="slider__seccion">
+                                    <img src="./sliderPascual/foto4.jpg" alt="Foto de Cerdeña" class="slider__img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </body>
+</html>
